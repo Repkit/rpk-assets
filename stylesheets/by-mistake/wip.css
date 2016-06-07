@@ -12,8 +12,8 @@ body{
 
 @media (min-width: 992px) {
   .sticky-note {
-    /*max-width:250px;*/
-    max-width:344px;
+    max-width:250px;
+    /*max-width:344px;*/
   }
 }
 
