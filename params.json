@@ -1,0 +1,6 @@
+{
+  "name": "rpk-assets",
+  "tagline": "store assets for different projects",
+  "body": "### Welcome to rpk-assets\r\nThis is the place that will act like a cdn for all repkit's projects",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
