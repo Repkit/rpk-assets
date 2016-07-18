@@ -113,6 +113,19 @@ body{
     text-align: center;
 }
 
+.media-box .caption{
+  position: absolute;
+  z-index: 1;
+  background: rgba(82, 82, 82, 0.50);
+  color: #A0B64E;
+  width: 100%;
+  text-align: center;
+}
+
+.media-box .caption-bottom{
+  bottom: 0;
+}
+
 .video{
   z-index: 1;
 }
@@ -316,6 +329,14 @@ body{
 a:hover, a:visited, a:link, a:active{
     text-decoration: none;
 }
+a:visited, a:link, a:active{
+    color: rgba(160, 182, 78, 1);
+}
+a:hover{
+    color: rgba(244, 172, 113, 1);
+    text-shadow: 0 0 1px #FFF;
+}
+
 
 .small-sticky {
   /*width: 239px;*/
@@ -411,6 +432,10 @@ a:hover, a:visited, a:link, a:active{
   display: inline-block;
 }
 
+.sticky-note-arrow-left a{
+  color: #A0B64E;
+}
+
 .sticky-note-arrow-right::after {
     background: #A0B64E;
     width: 14.14213562373095px;
@@ -424,6 +449,10 @@ a:hover, a:visited, a:link, a:active{
     transform-origin: 0 0;
     transform: rotate(315deg);
     margin-left: 26px;
+}
+
+.sticky-note-arrow-right a{
+  color: #F4AC71;
 }
 
 /*==================================================
