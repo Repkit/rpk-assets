@@ -10,6 +10,9 @@ body{
   
 }
 
+/*==================================================
+ * header
+ * ===============================================*/
 .header{
     vertical-align:middle;
     font-family: cursive;
@@ -27,7 +30,9 @@ body{
     margin-top: 21px;
 }
 
-/*media-box*/
+/*==================================================
+ * media box latest post
+ * ===============================================*/
 .media-box {
 	position:relative;
 	/*padding-bottom:56.25%;*/
@@ -138,7 +143,9 @@ body{
   z-index: -1;
 }
 
-/*small notes*/
+/*==================================================
+ * top posts sticky notes
+ * ===============================================*/
 
 .top-notes{
   margin-top: 52px;
@@ -302,8 +309,12 @@ body{
   -o-transform: rotate(-10deg);
 }
 
-#posts, #small-stikies{
+#posts, #small-stikies, #pagination{
   margin-top: 50px;
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
 }
 
 .small-sticky {
@@ -334,7 +345,7 @@ body{
 }
 
 /*==================================================
- * Effect 4
+ * small-sticky-shadow
  * ===============================================*/
 .small-sticky-shadow{
   position: relative;
@@ -355,6 +366,70 @@ body{
     transform: rotate(5deg);
 }
 
+/*==================================================
+ * pagination
+ * ===============================================*/
+.sticky-notes-pager{
+    width:100%;
+    text-align:center;
+}
+
+.sticky-note-arrow-left{
+  margin: 0 auto;
+  background: #F4AC71;
+  width: 100px;
+  height: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
+  /*float: left;*/
+  display: inline-block;
+}
+
+.sticky-note-arrow-left::after {
+    background: #F4AC71;
+    width: 14.14213562373095px;
+    height: 14.14213562373095px;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 0px -1px rgba(0, 0, 0, 0.4);
+    
+    position: absolute;
+    content: "";
+    margin-top: 10px;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+    margin-left: -67px;
+}
+
+.sticky-note-arrow-right{
+  margin: 0 auto;
+  background: #A0B64E;
+  width: 100px;
+  height: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
+  /*float: left;*/
+  display: inline-block;
+}
+
+.sticky-note-arrow-right::after {
+    background: #A0B64E;
+    width: 14.14213562373095px;
+    height: 14.14213562373095px;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 0px -1px rgba(0, 0, 0, 0.4);
+    
+    position: absolute;
+    content: "";
+    margin-top: 10px;
+    transform-origin: 0 0;
+    transform: rotate(315deg);
+    margin-left: 26px;
+}
+
+/*==================================================
+ * footer
+ * ===============================================*/
+
 footer{
   margin-top: 21px;
   text-align: center;
@@ -366,6 +441,9 @@ hr {
     border-color: rgba(102, 102, 102, 0.12) transparent #ccc transparent;
 }
 
+/*==================================================
+ * custom attributes based on media query
+ * ===============================================*/
 @media (min-width: 992px) {
   .sticky-note {
     max-width:249px;

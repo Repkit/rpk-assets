@@ -131,7 +131,9 @@ body{
 
 .sticky-note>span.tape{
 	position:absolute;
-	top:-15px; right:80px;
+	top:-15px; 
+	/*right:80px;*/
+	right:50%;
 	width: 77px;
 	height: 35px;
 	background-color:#FEFFE4;
