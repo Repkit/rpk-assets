@@ -19,7 +19,7 @@ body{
     color: grey;
     background: url('http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png') no-repeat;
     display: block;
-    height: 140px;
+    min-height: 140px;
     margin-left: auto;
     margin-right: auto;
 }
