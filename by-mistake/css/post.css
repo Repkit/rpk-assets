@@ -16,8 +16,8 @@ body{
 .header{
     vertical-align:middle;
     font-family: cursive;
-    color: grey;
-    background: url('http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png') no-repeat;
+    color: rgba(33,150,243,0.84);
+    /*background: url('http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png') no-repeat;*/
     display: block;
     min-height: 140px;
     margin-left: auto;
@@ -26,14 +26,14 @@ body{
 
 .header>h1{
     text-align: center;
-    font-size: 84px;
+    font-size: 63px;
     margin-top: 21px;
 }
 
 .header-xs{
     vertical-align:middle;
     font-family: cursive;
-    color: grey;
+    color: rgba(33,150,243,0.84);
     display: none;
 }
 
@@ -42,7 +42,8 @@ body{
  * ===============================================*/
 .post-content{
     font-family: 'Short Stack', cursive;
-    color:grey;
+    color:#8293a4;
+    font-size: 18px;
 }
 
 /*==================================================
@@ -193,8 +194,21 @@ hr {
     display: none;
   }
   
+  .logo{
+    display: none;
+  }
+  
   .header-xs{
       display: block;
+  }
+  
+  /*disable background-image and cursive for mobile devices*/
+  body{
+      background-image:none;
+      background-color:#edf0f1;
+  }
+  .post-content{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   }
   
 }
