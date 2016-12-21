@@ -17,7 +17,7 @@ body{
     vertical-align:middle;
     font-family: cursive;
     color: grey;
-    /*background: url('http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png') no-repeat;*/
+    background: url('http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png') no-repeat;
     display: block;
     height: 140px;
     margin-left: auto;
@@ -25,16 +25,9 @@ body{
 }
 
 .header>h1{
-    /*text-align: center;*/
-    text-align: left;
+    text-align: center;
     font-size: 84px;
     margin-top: 21px;
-}
-.header-xs{
-    vertical-align:middle;
-    text-align: center;
-    color: grey;
-    display: none;
 }
 
 /*==================================================
@@ -951,18 +944,6 @@ hr {
   }
 }
 
-/*@media (max-width: 992px) {
-  .header{
-    background: url('http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png') no-repeat center;
-  }
-  .header>h1{
-    display: none;
-  }
-  .top-notes {
-    margin-left: 72px;
-  }
-}*/
-
 @media (max-width: 992px) {
   .header{
     background: url('http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png') no-repeat center;
@@ -973,21 +954,4 @@ hr {
   .top-notes {
     margin-left: 72px;
   }
-  .logo{
-    display: none;
-  }
-  
-  .header-xs{
-      display: block;
-  }
-  
-  /*disable background-image and cursive for mobile devices*/
-  body, .small-sticky{
-      background-image:none;
-      background-color:#edf0f1;
-  }
-  .sticky-note-inner{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  }
-
 }
