@@ -1,0 +1,107 @@
+.nav-menu{
+    margin-top: -147px;
+    float: right;
+}
+
+/* ..menu-item:before{
+  content: " ";
+  top:-42px;
+  position:absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 75px 42px 75px;
+  border-color: transparent transparent #6c6 transparent;
+} */
+
+.menu-item{
+  margin-top: -8px;
+  width: 98px;
+  height: 68px;
+  position: relative;
+  display: inline-block;
+}
+.menu-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.menu-item a {
+  color: inherit;
+  text-decoration: none;
+}
+.menu-item .menu-content {		
+  color:#eee;
+  font-family: 'Short Stack', cursive;
+  margin:0;		
+  text-align:center;
+  padding-top:5px;
+}
+.menu-item hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  width: 60%;
+  margin: 7px auto;
+}
+.menu-item .menu-desc {
+  font-size:16px;
+  font-family: 'Kotta One', serif;
+  margin:0 auto;
+}
+
+/* colors */
+.menu-item.blue{
+    background-color:#74cddb;
+}
+.menu-item.blue:hover{
+    -moz-box-shadow: #74cddb 2px 2px 10px;
+    -webkit-box-shadow: #74cddb 2px 2px 10px;
+    box-shadow: #74cddb 2px 2px 10px;
+}
+.menu-item.blue:after{
+  content: " ";
+  bottom:-28px;
+  position:absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 49px 0 49px;
+  border-color: #74cddb transparent transparent transparent;
+}
+
+.menu-item.yellow{
+    background-color:#f5c53c;
+}
+.menu-item.yellow:hover{
+    -moz-box-shadow: #f5c53c 2px 2px 10px;
+    -webkit-box-shadow: #f5c53c 2px 2px 10px;
+    box-shadow: #f5c53c 2px 2px 10px;
+}
+.menu-item.yellow:after{
+  content: " ";
+  bottom:-28px;
+  position:absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 49px 0 49px;
+  border-color: #f5c53c transparent transparent transparent;
+}
+
+.menu-item.green{
+    background-color:#80b971;
+}
+.menu-item.green:hover{
+    -moz-box-shadow: #80b971 2px 2px 10px;
+    -webkit-box-shadow: #80b971 2px 2px 10px;
+    box-shadow: #80b971 2px 2px 10px;
+}
+.menu-item.green:after{
+  content: " ";
+  bottom:-28px;
+  position:absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 49px 0 49px;
+  border-color: #80b971 transparent transparent transparent;
+}
