@@ -7,59 +7,79 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Blog by-mistake</title>
         
-        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link href="//cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css" rel="stylesheet">
-        
+    
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link href="css/post.min.css" rel="stylesheet">
-        
+        <link href="css/post.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="head-title">
-          <p>P<img src="http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_40/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png">st-it</p>
-        </div>
-        <nav id="myNavbar" class="navbar navbar-default navbar-fixed-topy top-paper-ribon" role="navigation">
-             <!--Brand and toggle get grouped for better mobile display -->
-            <div class="container top-papper">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" rel="home" href="#" title="by-mistake">
-                        <!--<img src="http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_70/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png">-->
-                        <div class="brand-name">by-mistake</div>
-                    </a>
-                </div>
-                 <!--Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+        
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 logo">
+                        <img src="http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_140/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png">
+                    </div>
+                    <div class="col-md-10 header">
+                        <div class="nav-menu">
+                          <div class="menu-item blue">
+                            <div class="menu-content">
+                              <a href="#">
+                                <span class="menu-label">HOME</span>
+                              </a>
+                              <hr />
+                              <p class="menu-desc">sweet home</p>
+                            </div>
+                          </div>
+                          
+                          <div class="menu-item yellow">
+                            <div class="menu-content">
+                              <a href="#">
+                                <span class="menu-label">ABOUT</span>
+                              </a>
+                              <hr />
+                              <p class="menu-desc">our mission</p>
+                            </div>
+                          </div>
+                          
+                          <div class="menu-item green">
+                            <div class="menu-content">
+                              <a href="#">
+                                <span class="menu-label">CONTACT</span>
+                              </a>
+                              <hr />
+                              <p class="menu-desc">love to help</p>
+                            </div>
+                          </div>
+                        </div>
+                        <h1>Understanding psr-7 and the idea behind it</h1>
+                    </div>
+                    <!--<div class="col-md-12 header">
+                        <h1>Understanding psr-7 and the idea behind it</h1>
+                    </div>-->
+                    <div class="col-xs-12 header-xs">
+                        <h2>Understanding psr-7 and the idea behind it</h2>
+                    </div>
+                    
                 </div>
             </div>
-        </nav>
+        </header>
         
         <div class="container">
+            
             <div class="row">
                 <a href="#"><span class="flag-icon flag-icon-us"></span></a>
-            </div>
-            
-            <div class="row post-title">
-                <h1>Understanding psr-7 and the idea behind it</h1>
             </div>
             
             <div class="row">
@@ -135,38 +155,28 @@
             
         </div>
         
-        <script type="text/javascript">
-          // make note click-able
-          // DOM Level 0 way
-          window.onload = function () {
-            
-            var i,j;
-            var notesclass = ['sticky-note','notes'];
-            var notelinksclass = ['read-note','view-post'];
-            
-            for(j = 0; j < notesclass.length; j++){
-              var notes = document.getElementsByClassName(notesclass[j]);
-              for (i = 0; i < notes.length; i++) {
-                
-                var note = notes[i];
-                var noteurl = note.getElementsByClassName(notelinksclass[j])[0].getAttribute('href');
-                
-                note.style.cursor = 'pointer';
-                
-                note.onclick = function(event) {
-                  window.location.href = noteurl;
-                };
-                note.onkeydown  = function(event) {
-                  window.location.href = noteurl;
-                };
-                
-              }
-            }
-          };
-        </script>
+        
         
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <script>
+            
+            var disqus_config = function () {
+                this.page.url = location.href;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = 'rpk-test-post'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                
+                s.src = '//bymiskate.disqus.com/embed.js';
+                
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+
     </body>
 </html>
