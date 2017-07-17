@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html data-language="en_US" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Contact by-mistake</title>
+		<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link href="css/contact.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="head-title">
+          <p>P<img src="http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_40/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png">st-it</p>
+        </div>
+        <nav id="myNavbar" class="navbar navbar-default navbar-fixed-topy top-paper-ribon" role="navigation">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="container top-papper">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" rel="home" href="#" title="by-mistake">
+                        <!--<img src="http://res.cloudinary.com/by-mistake-com/image/upload/c_scale,w_70/v1452343689/logo.by-mistake.v3.1_210x210_rfop8f.png">-->
+                        <div class="brand-name">by-mistake</div>
+                    </a>
+                </div>
+                 <!--Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		
+		<div class="container">
+			<div class="wrapper centered">
+				<form method="post" action="" onsubmit="event.preventDefault(); mySubmit(event);">	
+					<article class="letter">
+							<div class="side">
+								<h1>Contact us</h1>
+								<h2 id="mailaddress" class="mailaddress">
+									<a href="mailto:office@by-mistake.com?Subject=I%20have%20an%20awesome%ideea%20bymistake" target="_top">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										&nbsp;office@by-mistake.com&nbsp;
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									</a>
+								</h2>
+								<p>
+									<textarea placeholder="Your awesome message"></textarea>
+								</p>
+							</div>
+							<div class="side">
+								<p>
+								    <input type="text" name="title" placeholder="Title" class="form-item">
+									<input type="text" name="name" placeholder="Your name" >
+								</p>
+								<p>
+									<input type="email" placeholder="Your email" >
+								</p>
+								<p>
+									<button id="sendLetter"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send</button>
+								</p>
+							</div>
+					</article>
+				</form>
+				<!--<div class="envelope front"></div>-->
+				<!--<div class="envelope back"></div>-->
+			</div>
+			<p class="result-message centered">Thank you for your message!<br><a href="index.html">check out our mistakes wall</a></p>
+			
+			<!--social media-->
+	        <div class="row footer">
+	          <hr>
+	          <div class="col-md-6">
+	              <div class="social-media social-media-shadow">
+	                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+	                  <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+	                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	              </div>
+	          </div>
+	          <div class="col-md-6">
+	            <footer class="pull-right">
+	                  <span>copyright present by-mistake</span>
+	            </footer>
+	          </div>
+	        </div>
+		</div>
+		
+		<script type="text/javascript">
+			function addClass() {
+			  document.body.classList.add("sent");
+			}
+			
+			sendLetter.addEventListener("click", addClass);
+			
+			
+			function mySubmit(evt) { 
+        		evt.preventDefault();
+            	mailaddress.innerHTML = "";
+              try {
+              } catch (e) {
+                throw new Error(e.message);
+              }
+              return false;
+            }
+            
+		</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
